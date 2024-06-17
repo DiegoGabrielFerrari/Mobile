@@ -49,10 +49,10 @@ const Login = ({navigation}) => {
   return (
     <View style={styles.container}>
             <Image source={PlaceholderImage} style={styles.image} />
-            <Text style={styles.titulo}>Login Aula 20/05/24</Text>
+   
       <TextInput
         style={styles.input}
-        placeholder="Nome de Usuário"
+        placeholder="Email"
         onChangeText={text => setNomeUsuario(text)}
         value={nomeUsuario}
       />

@@ -24,6 +24,8 @@ const Home = ({ navigation, route }) => {
       <View>
         <Image source={PlaceholderImage} style={styles.image} />
         <Text style={styles.titulo}>Principal</Text>
+
+        <Text style={styles.Bem}>Bem Vindo</Text>
       </View>
 
       <View>
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#fff",
     gap: 10,
-    backgroundColor: "#9f9",
+    backgroundColor: "ffffff",
   },
   image: {
     width: "80%",
@@ -60,6 +62,14 @@ const styles = StyleSheet.create({
   },
   titulo: {
     fontSize: 40,
+    textAlign:"center",
+    fontWeight: "bold",
+    marginBottom: 20,
+  },
+
+  Bem: {
+    fontSize: 25,
+    textAlign:"center",
     fontWeight: "bold",
     marginBottom: 20,
   },
@@ -73,7 +83,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   botao: {
-    backgroundColor: "black",
+    backgroundColor: "orange",
     width: "75%",
     height: 50,
     justifyContent: "center",
