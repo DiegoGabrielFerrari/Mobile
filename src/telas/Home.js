@@ -27,12 +27,12 @@ const Home = ({ navigation, route }) => {
       </View>
 
       <View>
-          <Text style={styles.text}> apelido: {nome}</Text>
-          <Text style={styles.text}> email:  {email}</Text>          
-          <Text style={styles.text}> telefone: {phoneNumber}</Text>
-          <Text style={styles.text}> foto url: {photoURL}</Text>
-          <Text style={styles.text}> uuid: {uid}</Text>
-          <Text style={styles.text}> email verificado: {emailVerified}</Text>
+          <Text> apelido: {nome}</Text>
+          <Text> email:  {email}</Text>          
+          <Text> telefone: {phoneNumber}</Text>
+          <Text> foto url: {photoURL}</Text>
+          <Text> uuid: {uid}</Text>
+          <Text> email verificado: {emailVerified}</Text>
         <View>
           <TouchableOpacity style={styles.botao} onPress={onLoginClick}>
             <Text style={styles.textoBotao}>Ficha Usuario</Text>
@@ -49,8 +49,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "blue",
+    backgroundColor: "#fff",
     gap: 10,
+    backgroundColor: "ffffff",
   },
   image: {
     width: "80%",
@@ -60,18 +61,11 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 40,
     textAlign:"center",
-    color: "white",
     fontWeight: "bold",
     marginBottom: 20,
   },
 
-  text: {
-    color: "white",
-  },
-
-
   Bem: {
-    
     fontSize: 25,
     textAlign:"center",
     fontWeight: "bold",
@@ -87,7 +81,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   botao: {
-    backgroundColor: "black",
+    backgroundColor: "orange",
     width: "75%",
     height: 50,
     justifyContent: "center",
